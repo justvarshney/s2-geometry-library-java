@@ -5,13 +5,17 @@ group = 's2-geometry-java'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenLocal()
-    mavenCentral()
-    jcenter()
+  mavenLocal()
+  mavenCentral()
+  jcenter()
+}
+
+test {
+  include '**/*Test.java'
 }
 
 dependencies {
-    compile 'com.google.guava:guava:19.0'
-    compile 'com.google.code.findbugs:jsr305:3.0.0'
-    testCompile 'junit:junit:4.12'
+  compile 'com.google.guava:guava:19.0'
+  compile 'com.google.code.findbugs:jsr305:3.0.0'
+  testCompile 'junit:junit:4.12'
 }
